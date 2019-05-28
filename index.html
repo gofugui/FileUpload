@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Canny Edge Detection</title>
+    <style>
+      canvas {
+      background: #eee;
+      display: block;
+      margin: 50px auto;
+      }
+      img {
+      display: none;
+      }
+
+      #result {
+      text-align: center;
+    }
+  #result img {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+    </style>
+  </head>
+  <body>
+     
+    <div> 
+      <div id="result">
+      </div>
+      <form action="/upload" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+        <input type="file" name="image-upload" />
+        <input type="submit" value="Upload Image" />
+      </form>
+     
+    </div>
+    
+  </body>
+</html>
